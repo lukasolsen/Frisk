@@ -29,22 +29,22 @@ function App() {
   return (
     <div className="container mx-auto flex flex-col md:flex-row">
       <div className="md:w-1/2 px-4 md:pr-8 md:pl-0">
-        <span className="uppercase text-primary">Lær fra i dag</span>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <span className="uppercase text-blue">Lær fra i dag</span>
+        <h1 className="text-1xl md:text-2xl lg:text-3xl font-bold leading-tight">
           Finn Helse og Friskhet Gjennom Bevegelse
         </h1>
-        <p className="text-sm md:text-base lg:text-lg mt-4">
+        <p className="text-sm md:text-base lg:text-base mt-2 mb-2 text-gray-200">
           Helse og friskhet gjennom bevegelse. Inspirasjon, råd, fellesskap.
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 mt-6 md:mt-8 justify-between w-5/12 mx-auto">
           <Link
-            className="bg-primary rounded-lg py-3 px-6 text-white"
+            className="bg-blue rounded-lg py-3 px-6 text-white"
             to={"/register"}
           >
             Bli medlem
           </Link>
           <a
-            className="bg-transparent border border-primary rounded-lg py-3 px-6 text-primary mt-4 md:mt-0"
+            className="bg-transparent border border-blue rounded-lg py-3 px-6 text-blue mt-4 md:mt-0"
             href="https://www.youtube.com/watch?v=6q0VcgOfIQA&t"
             target="_blank"
             rel="noopener noreferrer"
@@ -54,12 +54,10 @@ function App() {
         </div>
       </div>
       <div className={`md:w-1/2 mt-6 md:mt-0 overflow-hidden`}>
-        <Carousel
-          value={images}
-          numVisible={1}
-          numScroll={1}
-          itemTemplate={ImageItem}
-          className="h-full"
+        <img
+          src="https://www.usatoday.com/gcdn/presto/2020/08/31/USAT/57ea2bda-0aab-485b-8046-86c7fa02f072-Dumbbells.png?width=660&height=372&fit=crop&format=pjpg&auto=webp"
+          alt="test"
+          className="w-full h-auto rounded-3xl"
         />
       </div>
     </div>
